@@ -5,7 +5,9 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -14,7 +16,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
     "indent": [
@@ -32,6 +35,15 @@
     "semi": [
       "error",
       "never"
-    ]
+    ],
+    "arrow-parens" : "error",
+    "camelcase":"error",
+    "key-spacing":"error",
+    "lines-between-class-members": "error",
+    "no-duplicate-imports":"error",
+    "prefer-const":"error",
+    "sort-imports":"error",
+    "sort-keys": "error",
+    "spaced-comment":"error"
   }
 }
